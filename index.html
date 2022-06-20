@@ -91,7 +91,7 @@
                             <div class="posts bg-light mt-2 rounded border">
                                 <h2 class="py-3 fw-bold">Posts</h2>
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <textarea id="text" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                                     <label for="floatingTextarea2"></label>
                                     
                                 </div>
@@ -99,7 +99,7 @@
                             <div class="card">
                                 <div class="row">
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn btn-primary">Create Post</button>
+                                        <button type="button" onclick="createPost(this)" class="btn btn-primary">Create Post</button>
                                     </div>
                                 </div>
                             </div>
