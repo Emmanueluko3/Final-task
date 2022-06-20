@@ -8,7 +8,7 @@ const refreshPostContainer = () => {
             <div class="card m-1">
                 <div class="card-body">
                     <p class="card-text">${item.body}</p>
-                    <a href="#" data-id="${item.id}" class="btn btn-danger">delete</a>
+                    <a href="#" onclick="deletePost(this)" data-id="${item.id}" class="btn btn-danger">delete</a>
                 </div>
             </div>`
 
@@ -55,8 +55,7 @@ const createPost = (attr) => {
     .then(data => {
         allPost.push(data)
         refreshPostContainer()
-        console.log('all_',allPost)
-        console.log(data)
+        document.querySelector('#text').value = '';
     })
 }
 
@@ -70,8 +69,9 @@ const deletePost = (attr) => {
     })
     .then(data => data.json())
     .then(data => {
-        allPost = allPost.filter(item => item.id !== id)
-        console.log('all_',allPost)
-        console.log(data)
+        allPost = allPost.filter(item => item.id != id)
+
+        refreshPostContainer()
     }) 
+
 }
