@@ -9,7 +9,7 @@ const refreshPostContainer = () => {
                 <div class="card-body">
                     <p class="card-text">${item.title}</p>
                     <a href="#" onclick="viewPost(${item.id})" data-id="${item.id}" class="btn btn-info">View</a>
-                    <a href="#" onclick="editPost(this)" data-id="${item.id}" class="btn btn-primary">Edit</a>
+                    <a href="#" onclick="editPost(this)" data-id="${item.id}" class="btn btn-primary">Update</a>
                     <a href="#" onclick="deletePost(this)" data-id="${item.id}" class="btn btn-danger">Delete</a>
                 </div>
             </div>`
