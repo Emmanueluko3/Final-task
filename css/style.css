@@ -1,5 +1,21 @@
 
+  .hover-yellow:hover{
+    color: #333672;
+  }
 
-.checked {
-    color: orange;
+  .transition{
+    transition: 0.5s;
+  }
+
+  .transition:hover{
+    transform: translateY(-50px)
+  }
+
+  
+  .transition-home{
+    transition: 0.5s;
+  }
+
+  .transition-home:hover{
+    transform: scale(1.5);
   }
